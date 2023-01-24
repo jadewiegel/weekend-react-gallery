@@ -15,9 +15,9 @@ const [imageSwap, setImageSwap] = useState(true);
         )} else {
         return(
             <>
-                <div>                    
-                    <img src={galleryItemProp.path} class="galleryDisplay" onClick={() => setImageSwap(!imageSwap)} />
-                    <button onClick={() => addLikesProp(galleryItemProp.id)}>Like!</button>
+                <div className="photoSection">                    
+                    <img src={galleryItemProp.path} className="galleryGrid" onClick={() => setImageSwap(!imageSwap)} />
+                    <br /><button onClick={() => addLikesProp(galleryItemProp.id)}>Like!</button>
                     <p># of Likes: {galleryItemProp.likes}</p>
                 </div>
             </>

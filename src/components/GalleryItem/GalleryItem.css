@@ -1,21 +1,10 @@
-.galleryDisplay {
-    padding: 10px;
-    justify-items: center;
-    width:500px;
-    flex: 50%;
-    max-width:50%;
+.galleryGrid{
+    width: 340px;
+    
 }
 
-/* .galleryDisplay {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 15px;
-    max-width: 25%;
-} */
-
-/* .galleryDisplay {
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-    flex: 25%;
-    max-width: 25%; 
-    padding: 0 4px;
-} */
+.photoSection{
+    border-style: inset;
+    border-color: rgb(135, 152, 152);
+    border-width: 5px;
+}

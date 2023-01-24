@@ -5,12 +5,13 @@
     grid-column:auto;
 } */
 
-/* .galleryDisplay {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+.galleryDisplay {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
-    max-width: 25%;
-}  */
+    width:90%;
+    padding: 10px;
+} 
 
 /* .galleryDisplay {
     padding: 10px;
@@ -18,4 +19,10 @@
     width:500px;
     flex: 50%;
     max-width:50%;
+} */
+
+/* .galleryDisplay {
+    display: grid;
+    grid-template-columns: repeat(4, 1frs);
+
 } */
