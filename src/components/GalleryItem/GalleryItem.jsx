@@ -9,14 +9,14 @@ const [imageSwap, setImageSwap] = useState(true);
     if (!imageSwap){
         return(
             <>
-            <p>{galleryItemProp.description}</p>
-            <button onClick={() => setImageSwap(!imageSwap)}>View Photo Again</button>
+                <p>{galleryItemProp.description}</p>
+                <button onClick={() => setImageSwap(!imageSwap)}>View Photo Again</button>
             </>
         )} else {
         return(
             <>
                 <div>                    
-                    <img src={galleryItemProp.path} class='galleryDisplay' onClick={() => setImageSwap(!imageSwap)} />
+                    <img src={galleryItemProp.path} class="galleryDisplay" onClick={() => setImageSwap(!imageSwap)} />
                     <button onClick={() => addLikesProp(galleryItemProp.id)}>Like!</button>
                     <p># of Likes: {galleryItemProp.likes}</p>
                 </div>

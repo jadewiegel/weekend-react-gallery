@@ -6,7 +6,7 @@ function GalleryList ({galleryListProp, addLikesProp}) {
     return (
         <>
             <p>Gallery goes here</p>
-            <ul class="galleryDisplay">
+            <ul>
                 {galleryListProp.map(gallery => (
                     <GalleryItem galleryItemProp={gallery} addLikesProp={addLikesProp} />
                 ))}

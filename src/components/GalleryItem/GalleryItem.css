@@ -1,10 +1,10 @@
-/* .galleryDisplay {
+.galleryDisplay {
     padding: 10px;
     justify-items: center;
     width:500px;
     flex: 50%;
     max-width:50%;
-} */
+}
 
 /* .galleryDisplay {
     display: grid;
@@ -14,7 +14,8 @@
 } */
 
 /* .galleryDisplay {
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
     flex: 25%;
-    max-width: 25%;
+    max-width: 25%; 
     padding: 0 4px;
 } */

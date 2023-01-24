@@ -1,10 +1,9 @@
-.galleryDisplay {
+/* .galleryDisplay {
     display: grid;
     padding: 10px;
-    justify-items: center;
     width:450px;
     grid-column:auto;
-}
+} */
 
 /* .galleryDisplay {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -12,3 +11,11 @@
     grid-gap: 15px;
     max-width: 25%;
 }  */
+
+/* .galleryDisplay {
+    padding: 10px;
+    justify-items: center;
+    width:500px;
+    flex: 50%;
+    max-width:50%;
+} */
