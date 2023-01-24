@@ -1,19 +1,16 @@
 import GalleryItem from '../GalleryItem/GalleryItem';
 import './GalleryList.css';
 
-function GalleryList ({galleryListProp}) {
-
+function GalleryList ({galleryListProp, addLikesProp}) {
+    
     return (
         <>
             <p>Gallery goes here</p>
-            {/* <div class='galleryDisplay'> */}
-            <ul>
+            <ul class="galleryDisplay">
                 {galleryListProp.map(gallery => (
-                //    <img src={gallery.path} class='galleryDisplay' />
-                    <GalleryItem galleryItemProp={gallery} />
+                    <GalleryItem galleryItemProp={gallery} addLikesProp={addLikesProp} />
                 ))}
             </ul>
-            {/* </div> */}
         </>
     );
 }

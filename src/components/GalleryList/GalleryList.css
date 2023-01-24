@@ -1,5 +1,14 @@
-/* .galleryDisplay {
+.galleryDisplay {
+    display: grid;
     padding: 10px;
     justify-items: center;
     width:450px;
-} */
+    grid-column:auto;
+}
+
+/* .galleryDisplay {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    display: grid;
+    grid-gap: 15px;
+    max-width: 25%;
+}  */

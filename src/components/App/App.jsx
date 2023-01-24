@@ -8,6 +8,17 @@ import GalleryList from '../GalleryList/GalleryList';
   function App() {
     let [galleryList, setGalleryList] = useState([]);
 
+    const addLikes =(totalLikes) => {
+      let id = totalLikes;
+      axios({
+        method: 'PUT',
+        url: `/gallery/like/${id}`
+      }).then(function() {
+        getGallery();
+      }).catch((error) => {
+        console.log('error with put request,', error);
+      })
+    }
     
 
     const getGallery = () => {
@@ -35,7 +46,7 @@ import GalleryList from '../GalleryList/GalleryList';
             <h1 className="App-title">Gallery of My Life</h1>
           </header>
           {/* <p>Gallery goes here</p> */}
-          <GalleryList galleryListProp={galleryList} />
+          <GalleryList galleryListProp={galleryList} addLikesProp={addLikes}/>
         </div>
       );
     }
